@@ -3,6 +3,7 @@ GUI for easier installation and training of neural network models for guitar amp
 
 What is this?
 GuitarML's work on Proteus, NeuralPi and Proteusboard (hardware) is amazing. https://github.com/GuitarML
+
 Yet, it is not easy to wrap your head around if you are not familiar with programming, AI, machine learning, neuronal networks.
 So, Keith Bloemer a.k.a. GuitarML set up a Google Colab script to give people the Opportunity to train their own models online.
 Still, I thought that things could be easier, and I wanted a faster way to work with the python scripts.
