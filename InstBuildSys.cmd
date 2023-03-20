@@ -11,16 +11,6 @@ echo SOME PARTS OF THIS INSTALLATION PROCESS CAN TAKE QUITE SOME TIME!
 echo DON'T CLOSE THIS WINDOW UNTIL YOU ARE ASKED TO DO IT.
 echo.
 echo.
-::echo Downloading SoX for Windows. Please wait...
-::curl -L "https://sourceforge.net/projects/sox/files/sox/14.4.2/sox-14.4.2-win32.zip" -o sox.zip
-::echo Extracting SoX for Windows...
-::tar -xf sox.zip
-::echo Done.
-::echo Deleting SoX zip file.
-::del sox.zip
-::echo Done.
-::echo.
-::echo.
 echo Downloading Capture Utility from GuitarML...
 curl -L "https://github.com/GuitarML/Releases/releases/download/v1.0.0/Proteus_Capture_Utility.zip" -o Proteus_Capture_Utility.zip
 echo Done.
@@ -70,8 +60,6 @@ echo.
 echo.
 echo Installing Proteus modelling requirements...
 pip install -r ./requirements.txt
-::curl https://developer.download.nvidia.com/compute/cuda/11.8.0/network_installers/cuda_11.8.0_windows_network.exe -o cuda-installer.exe
-::cuda-installer.exe
 echo.
 echo.
 echo Installing cu111...
