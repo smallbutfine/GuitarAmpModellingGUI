@@ -10,3 +10,5 @@ echo PLEASE BE PATIENT.
 echo.
 echo Downloading GuitarML Proteus Tonelib model packs. Please wait...
 curl -L "https://github.com/GuitarML/ToneLibrary/releases/download/v1.0/Proteus_Tone_Packs.zip" -o Proteus_Tone_Packs.zip
+::open with default zip application registered in Windows
+Proteus_Tone_Packs.zip
