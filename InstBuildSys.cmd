@@ -70,6 +70,12 @@ echo.
 echo.
 echo Installing Proteus modelling requirements...
 pip install -r ./requirements.txt
+::curl https://developer.download.nvidia.com/compute/cuda/11.8.0/network_installers/cuda_11.8.0_windows_network.exe -o cuda-installer.exe
+::cuda-installer.exe
+echo.
+echo.
+echo Installing cu111...
+pip3 install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html
 echo Done.
 echo.
 echo.
