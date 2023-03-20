@@ -9,7 +9,7 @@ echo.
 cd Automated-GuitarAmpModelling
 call .\mypyenv\Scripts\activate.bat
 pause
-python prep_wav.py amp_clean -s Data/Proteus_Capture.wav ..\out.wav --normalize true
+python prep_wav.py amp_clean -s Data\Proteus_Capture.wav ..\out.wav --normalize true
 pause
 python dist_model_recnet.py -l "RNN3-amp_clean" -eps 300
 pause
