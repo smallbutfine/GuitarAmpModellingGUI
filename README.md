@@ -12,12 +12,15 @@ I assume, that most musicians use this OS.
 This repository contains a bunch of Windows batch scripts and a freepascal based GUI solution.
 They allow me to quickly install, re-install and test everything and even start a local offline model training.
 I tried to make the install of all prerequisites as automated as possible, yet as little intrusive of global OS settings as possible.
-Despite of a quiet install of the actual python3 with standard settings, everything is hold inside of one folder or are just temporary.
+Despite of a quiet install of python3 with standard settings, everything is hold inside of one folder or are just temporary.
 The python prerequisites are hold in a virtual environment to not collide to any other python installation.
 The offline training takes it's time, though, but is managable with a fast PC.
-I will provide a convenient binary installer soon, so people will not have to deal with code organization and compilation.
+I will provide a convenient binary installer, so people will not have to deal with code organization and compilation at all.
 
-How to build/compile
+-------------------------------------
+How to build/compile from source code
+-------------------------------------
+This is not necessary with the portable install release available, but if you want to change the GUI, this is how it works.
 
 Building the GUI is quite easy.
 Download the repository to a local folder on your Windows 10 PC.
@@ -28,14 +31,17 @@ Open the Lazarus (Pascal) project file from the repository folder and compile it
 This should work out of the box.
 You get the binary executable in form of an .exe file right in this repository folder.
 
-Usage:
-Once the Lazarus project is compiled, the binary executable can simply be double clicked or started right from the Lazarus IDE.
+----------
+How to use
+----------
+The binary executable .exe can simply be double clicked in the explorer, wherever it is installed, or started right from the Lazarus IDE, if you compiled it yourself.
+
 The GUI is made for simplicity and works without submenu hassle.
 It is mostly self-explanatory.
 The help menu opens Youtube videos of GuitarML with really good information, how to capture an amp, pedal or VST plugin.
 
-When it comes to the building/training of the AI model, that can be used in VST plugins,
-the GUI offers a very easy nearly "mouse only" way to initiate OFFLINE/local training.
+When it comes to the building/training of the AI model, that can be used in the VST plugins,
+the GUI offers a very easy nearly "mouse only" way to initiate necessary installs and OFFLINE/local training.
 The scripts are highly automated and there is as little manual work as it gets.
 
 You need the keyboard only for entering the desired name of the model and to confirm closing of scripts.
@@ -48,7 +54,7 @@ Even the manual file renaming can be left out. You can import the files from whe
 Once you have these, your job is ... waiting for the scripts to do the hard work on their own.
 
 When the model is trained and ready to use, you can install it with the click of a button to whereever you need it.
-(Well, you have to give it a name....)
+(Well, you have to give it a name ... it is a simple copying of the .json model file.)
 
 
 These are great times for musicians.
