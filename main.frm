@@ -1,19 +1,20 @@
 object Form1: TForm1
   Left = 0
-  Height = 942
+  Height = 874
   Top = 0
   Width = 881
   Caption = 'Amp Model Builder GUI for GuitarML Proteus'
-  ClientHeight = 942
+  ClientHeight = 874
   ClientWidth = 881
   DesignTimePPI = 144
   Menu = MainMenu1
+  OnCreate = FormCreate
   LCLVersion = '8.0'
   object Button1: TButton
     Left = 8
     Height = 37
-    Top = 592
-    Width = 360
+    Top = 648
+    Width = 416
     Caption = 'Build model offline'
     Font.Style = [fsBold]
     OnClick = Button1Click
@@ -21,11 +22,11 @@ object Form1: TForm1
     TabOrder = 0
   end
   object Label1: TLabel
-    Left = 8
+    Left = 664
     Height = 25
-    Top = 40
-    Width = 83
-    Caption = 'Amp type:'
+    Top = 8
+    Width = 95
+    Caption = 'Model type:'
   end
   object Label3: TLabel
     Left = 8
@@ -33,7 +34,6 @@ object Form1: TForm1
     Top = 124
     Width = 339
     Caption = 'Select snapshot model response audio file:'
-    OnClick = Label3Click
   end
   object Label4: TLabel
     Left = 8
@@ -64,10 +64,10 @@ object Form1: TForm1
     Caption = 'Select parameter response file at 75%: (Only for parameterized models)'
   end
   object ComboBox1: TComboBox
-    Left = 8
+    Left = 552
     Height = 33
-    Top = 64
-    Width = 363
+    Top = 32
+    Width = 308
     ItemHeight = 25
     Items.Strings = (
       'Clean Amps, Compressors'
@@ -75,14 +75,13 @@ object Form1: TForm1
       'Pedals'
       'Parameterized Amps'
     )
-    OnChange = ComboBox1Change
     TabOrder = 1
-    Text = 'Select an amp type here.'
+    Text = 'Select a model type here.'
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 36
-    Top = 906
+    Top = 838
     Width = 881
     Panels = <    
       item
@@ -168,60 +167,42 @@ object Form1: TForm1
   end
   object Button2: TButton
     Left = 8
-    Height = 68
-    Top = 746
+    Height = 66
+    Top = 14
     Width = 208
     Caption = 'Re-/Install Build System'
     OnClick = Button2Click
     TabOrder = 8
   end
   object Button3: TButton
-    Left = 224
+    Left = 8
     Height = 46
-    Top = 754
+    Top = 712
     Width = 328
     Caption = 'Re-/Install Proteus VST from GuitarML'
     OnClick = Button3Click
     TabOrder = 9
   end
   object Button4: TButton
-    Left = 560
+    Left = 8
     Height = 49
-    Top = 754
-    Width = 312
+    Top = 768
+    Width = 328
     Caption = 'Re-/Install Proteus Community Library'
     OnClick = Button4Click
     TabOrder = 10
   end
-  object Label9: TLabel
-    Left = 11
-    Height = 25
-    Top = 702
-    Width = 849
-    Caption = 'Install Prerequisites (Build System is required for capturing, training and installation of the models):'
-    Font.Style = [fsBold]
-    ParentFont = False
-  end
-  object Label11: TLabel
-    Left = 8
-    Height = 25
-    Top = 8
-    Width = 734
-    Caption = 'Before building amp models offline, you need to install the Build System (see bottom).'
-    Font.Style = [fsBold, fsItalic]
-    ParentFont = False
-  end
   object Label12: TLabel
-    Left = 8
+    Left = 16
     Height = 25
-    Top = 807
+    Top = 80
     Width = 183
     Caption = 'Installation mandatory!'
   end
   object Button6: TButton
-    Left = 544
+    Left = 536
     Height = 55
-    Top = 842
+    Top = 736
     Width = 328
     Caption = 'Re-/Install BYOD from Chowdhury-DSP'
     OnClick = Button6Click
@@ -249,52 +230,43 @@ object Form1: TForm1
     OnChange = FileNameEdit6Change
     Text = 'Select 100% parameter response file ...'
   end
-  object ProgressBar1: TProgressBar
-    Left = 272
-    Height = 27
-    Top = 883
-    Width = 600
-    TabOrder = 13
-  end
   object Button7: TButton
-    Left = 388
+    Left = 444
     Height = 38
-    Top = 592
-    Width = 476
+    Top = 648
+    Width = 424
     Caption = 'Install model now! (building has to be finished)'
     OnClick = Button7Click
-    TabOrder = 14
+    TabOrder = 13
   end
   object Button5: TButton
-    Left = 8
-    Height = 42
-    Top = 850
-    Width = 296
+    Left = 256
+    Height = 66
+    Top = 14
+    Width = 272
     Caption = 'Open GuitarML Capture Utility'
     OnClick = Button5Click
-    TabOrder = 15
+    TabOrder = 14
   end
   object Label10: TLabel
-    Left = 8
+    Left = 232
     Height = 25
-    Top = 885
+    Top = 80
     Width = 331
     Caption = 'Contains input audio file and Colab script.'
-    OnClick = Label10Click
   end
   object Label8: TLabel
-    Left = 384
+    Left = 12
     Height = 25
-    Top = 40
+    Top = 576
     Width = 305
     Caption = 'Install built model here / Model Name:'
-    OnClick = Label3Click
   end
   object FileNameEdit7: TFileNameEdit
-    Left = 384
+    Left = 12
     Height = 33
-    Top = 64
-    Width = 476
+    Top = 600
+    Width = 856
     FileName = 'NewModelName.json'
     Filter = 'Proteus model file|*,json'
     FilterIndex = 0
@@ -302,7 +274,7 @@ object Form1: TForm1
     ButtonWidth = 34
     NumGlyphs = 1
     MaxLength = 0
-    TabOrder = 16
+    TabOrder = 15
     OnChange = FileNameEdit1Change
     Text = 'NewModelName.json'
   end
@@ -323,15 +295,14 @@ object Form1: TForm1
     WindowTop = 0
     WindowWidth = 0
     FillAttribute = 0
-    Left = 808
-    Top = 648
+    Left = 432
+    Top = 768
   end
   object MainMenu1: TMainMenu
-    Left = 488
-    Top = 176
+    Left = 600
+    Top = 96
     object MenuItem3: TMenuItem
       Caption = 'HELP!!!'
-      OnClick = MenuItem3Click
       object MenuItem5: TMenuItem
         Caption = 'Capturing Amps/Knobs'
         OnClick = MenuItem5Click
@@ -367,8 +338,8 @@ object Form1: TForm1
     WindowTop = 0
     WindowWidth = 0
     FillAttribute = 0
-    Left = 517
-    Top = 176
+    Left = 552
+    Top = 544
   end
   object Process3: TProcess
     Active = False
@@ -387,14 +358,40 @@ object Form1: TForm1
     WindowTop = 0
     WindowWidth = 0
     FillAttribute = 0
-    Left = 584
-    Top = 168
+    Left = 672
+    Top = 544
   end
-  object SaveDialog1: TSaveDialog
-    OnClose = SaveDialog1Close
-    Title = 'Model save as'
-    DefaultExt = '.json'
-    Left = 640
-    Top = 160
+  object ApplicationProperties1: TApplicationProperties
+    Left = 592
+    Top = 560
+  end
+  object BGRATheme1: TBGRATheme
+    Left = 448
+    Top = 568
+  end
+  object BGRAColorTheme1: TBGRAColorTheme
+    ColorNormal = clBlack
+    ColorHover = clBlack
+    ColorActive = clBlack
+    ColorDisabled = clBlack
+    ColorFocused = clBlack
+    ColorText = clBlack
+    Left = 472
+    Top = 856
+  end
+  object plZipCompress1: TplZipCompress
+    Left = 352
+    Top = 560
+  end
+  object plZipUnCompress1: TplZipUnCompress
+    Left = 352
+    Top = 824
+  end
+  object EpikTimer1: TEpikTimer
+    StringPrecision = 6
+    TimebaseSource = SystemTimebase
+    CorrelationMode = OnTimebaseSelect
+    Left = 768
+    Top = 560
   end
 end
