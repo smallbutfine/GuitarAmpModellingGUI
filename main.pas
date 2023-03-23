@@ -5,14 +5,18 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, process, Forms, Controls, Graphics, Dialogs, StdCtrls,
-  ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
+  Classes, SysUtils, process, fpsimplejsonexport, Forms, Controls, Graphics,
+  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil,
+  BGRATheme, BGRAColorTheme, TplZipUnit, vd_system, TplLongTimerUnit, EpikTimer;
 
 type
 
   { TForm1 }
 
   TForm1 = class(TForm)
+    ApplicationProperties1: TApplicationProperties;
+    BGRAColorTheme1: TBGRAColorTheme;
+    BGRATheme1: TBGRATheme;
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -21,6 +25,7 @@ type
     Button6: TButton;
     Button7: TButton;
     ComboBox1: TComboBox;
+    EpikTimer1: TEpikTimer;
     FileNameEdit1: TFileNameEdit;
     FileNameEdit2: TFileNameEdit;
     FileNameEdit3: TFileNameEdit;
@@ -30,7 +35,6 @@ type
     FileNameEdit7: TFileNameEdit;
     Label1: TLabel;
     Label10: TLabel;
-    Label11: TLabel;
     Label12: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -39,19 +43,20 @@ type
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
-    Label9: TLabel;
     MainMenu1: TMainMenu;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
+    plZipCompress1: TplZipCompress;
+    plZipUnCompress1: TplZipUnCompress;
     Process1: TProcess;
     Process2: TProcess;
     Process3: TProcess;
-    ProgressBar1: TProgressBar;
-    SaveDialog1: TSaveDialog;
+    SimpleJSONExporter1: TSimpleJSONExporter;
     StatusBar1: TStatusBar;
+    Timer1: TTimer;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
@@ -59,23 +64,18 @@ type
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
-    procedure ComboBox1Change(Sender: TObject);
-    procedure FileNameEdit1AcceptFileName(Sender: TObject; var Value: String);
+
     procedure FileNameEdit1Change(Sender: TObject);
     procedure FileNameEdit2Change(Sender: TObject);
     procedure FileNameEdit3Change(Sender: TObject);
     procedure FileNameEdit4Change(Sender: TObject);
     procedure FileNameEdit5Change(Sender: TObject);
     procedure FileNameEdit6Change(Sender: TObject);
-    procedure Label10Click(Sender: TObject);
-    procedure Label3Click(Sender: TObject);
-    procedure MenuItem2Click(Sender: TObject);
-    procedure MenuItem3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem5Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
     procedure MenuItem7Click(Sender: TObject);
-    procedure SaveDialog1Close(Sender: TObject);
 
   private
 
@@ -124,29 +124,20 @@ end;
 
 procedure TForm1.MenuItem5Click(Sender: TObject);
 begin
-  Process1.Execute;
+  OpenDocument('https://www.youtube.com/watch?v=2vs4WKYgZUs');
 end;
 
 procedure TForm1.MenuItem6Click(Sender: TObject);
 begin
-  Process2.Execute;
+  OpenDocument('https://www.youtube.com/watch?v=86oQuYHjpy0');
 end;
 
 procedure TForm1.MenuItem7Click(Sender: TObject);
 begin
-  Process3.Execute;
+  OpenDocument('https://www.youtube.com/watch?v=vwsSYpqRqyM');
 end;
 
-procedure TForm1.SaveDialog1Close(Sender: TObject);
-begin
-  FileCopy('./NewModel.json', SaveDialog1.FileName);
-end;
 
-procedure TForm1.MenuItem2Click(Sender: TObject);
-
-begin
-
-end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
@@ -164,6 +155,8 @@ begin
   end;
   OpenDocument('BuildModel.cmd');
 end;
+
+
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
@@ -190,16 +183,6 @@ begin
   FileCopy('newProteusModel.json', FileNameEdit7.FileName);
 end;
 
-procedure TForm1.ComboBox1Change(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.FileNameEdit1AcceptFileName(Sender: TObject; var Value: String
-  );
-begin
-
-end;
 
 procedure TForm1.FileNameEdit1Change(Sender: TObject);
 begin
@@ -231,20 +214,17 @@ begin
   FileCopy(FileNameEdit6.FileName, 'out5.wav');
 end;
 
-procedure TForm1.Label10Click(Sender: TObject);
+procedure TForm1.FormCreate(Sender: TObject);
 begin
+  //MaskFPUExceptions(true);
+
+  //PythonEngine1.UseWindowsConsole:= false;
+  //PythonEngine1.VenvPythonExe:='\Automated-GuitarAmpModelling\mypyenv\Scripts\python.exe';
+  //PythonEngine1.SetPythonHome('\Automated-GuitarAmpModelling\mypyenv\');
+  //PythonEngine1.LoadDll;
 
 end;
 
-procedure TForm1.Label3Click(Sender: TObject);
-begin
-
-end;
-
-procedure TForm1.MenuItem3Click(Sender: TObject);
-begin
-
-end;
 
 end.
 
