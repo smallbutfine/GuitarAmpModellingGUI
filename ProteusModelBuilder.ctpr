@@ -14,6 +14,19 @@
       </XPManifest>
       <Icon Value="0"/>
     </General>
+    <i18n>
+      <EnableI18N Value="True"/>
+      <OutDir Value="i8n"/>
+    </i18n>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MinorVersionNr Value="9"/>
+      <RevisionNr Value="5"/>
+      <BuildNr Value="1"/>
+      <Attributes pvaPreRelease="True"/>
+      <StringTable InternalName="Proteus Builder" LegalCopyright="2023 Martin Haverland" ProductVersion="0.9.5"/>
+    </VersionInfo>
     <BuildModes>
       <Item Name="Default" Default="True"/>
     </BuildModes>
@@ -25,6 +38,15 @@
       <FormatVersion Value="2"/>
     </RunParams>
     <RequiredPackages>
+      <Item>
+        <PackageName Value="pl_ExSystem"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_ExCompress"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_BGRAcontrols"/>
+      </Item>
       <Item>
         <PackageName Value="adFCL"/>
       </Item>
@@ -40,7 +62,7 @@
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
-        <FRMtype Value="0"/>
+        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
