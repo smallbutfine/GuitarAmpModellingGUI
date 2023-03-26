@@ -5,18 +5,13 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, process, fpsimplejsonexport, Forms, Controls, Graphics,
-  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil,
-  BGRATheme, BGRAColorTheme, TplZipUnit, vd_system, TplLongTimerUnit, EpikTimer;
-
-type
+  Classes, SysUtils, process, Forms, Controls, Graphics,
+  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
 
   { TForm1 }
 
   TForm1 = class(TForm)
     ApplicationProperties1: TApplicationProperties;
-    BGRAColorTheme1: TBGRAColorTheme;
-    BGRATheme1: TBGRATheme;
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
@@ -25,7 +20,6 @@ type
     Button6: TButton;
     Button7: TButton;
     ComboBox1: TComboBox;
-    EpikTimer1: TEpikTimer;
     FileNameEdit1: TFileNameEdit;
     FileNameEdit2: TFileNameEdit;
     FileNameEdit3: TFileNameEdit;
@@ -49,12 +43,9 @@ type
     MenuItem5: TMenuItem;
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
-    plZipCompress1: TplZipCompress;
-    plZipUnCompress1: TplZipUnCompress;
     Process1: TProcess;
     Process2: TProcess;
     Process3: TProcess;
-    SimpleJSONExporter1: TSimpleJSONExporter;
     StatusBar1: TStatusBar;
     Timer1: TTimer;
     procedure Button1Click(Sender: TObject);
