@@ -39,15 +39,6 @@
     </RunParams>
     <RequiredPackages>
       <Item>
-        <PackageName Value="etpackage"/>
-      </Item>
-      <Item>
-        <PackageName Value="pl_ExCompress"/>
-      </Item>
-      <Item>
-        <PackageName Value="bgracontrols"/>
-      </Item>
-      <Item>
         <PackageName Value="FCL"/>
       </Item>
       <Item>
