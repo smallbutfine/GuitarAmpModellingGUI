@@ -32,16 +32,6 @@
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="E:\Python-for-Lazarus-2023.01.02\Python-for-Lazarus-2023.01.02\python4lazarus\python4lazarus_register.pas"/>
-        <FRMtype Value="0"/>
-        <UnitName Value="Python4Typhon_register"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <CursorPos X="20"/>
-        <UsageCount Value="8"/>
-        <DefaultSyntaxHighlighter Value="Delphi"/>
-      </Unit>
-      <Unit>
         <Filename Value="C:\codetyphon\typhon\lcl\include\control.inc"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="1"/>
