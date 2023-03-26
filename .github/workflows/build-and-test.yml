@@ -27,10 +27,10 @@ jobs:
         with-cache: true
     - name: Build the Main Application
       if: ${{ matrix.operating-system != 'macos-latest' }}
-      run: lazbuild -B "src/lazaruswithgithubactions.lpi"
+      run: lazbuild -B "src/ProteusModelBuilder.lpi"
     - name: Build the Main Application (macOS)
       if: ${{ matrix.operating-system == 'macos-latest' }}
-      run: lazbuild -B --ws=cocoa "src/lazaruswithgithubactions.lpi"
+      run: lazbuild -B --ws=cocoa "src/ProteusModelBuilder.lpi"
  #   - name: Build the Unit Tests Application
  #     run: lazbuild -B "tests/testconsoleapplication.lpi"
   #  - name: Run the Unit Tests Application
