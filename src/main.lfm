@@ -3,7 +3,7 @@ object Form1: TForm1
   Height = 874
   Top = 0
   Width = 881
-  Caption = 'Amp Model Builder GUI for GuitarML Proteus'
+  Caption = 'Amp Model Builder GUI'
   ClientHeight = 874
   ClientWidth = 881
   DesignTimePPI = 144
@@ -360,38 +360,5 @@ object Form1: TForm1
     FillAttribute = 0
     Left = 672
     Top = 544
-  end
-  object ApplicationProperties1: TApplicationProperties
-    Left = 592
-    Top = 560
-  end
-  object BGRATheme1: TBGRATheme
-    Left = 448
-    Top = 568
-  end
-  object BGRAColorTheme1: TBGRAColorTheme
-    ColorNormal = clBlack
-    ColorHover = clBlack
-    ColorActive = clBlack
-    ColorDisabled = clBlack
-    ColorFocused = clBlack
-    ColorText = clBlack
-    Left = 472
-    Top = 856
-  end
-  object plZipCompress1: TplZipCompress
-    Left = 352
-    Top = 560
-  end
-  object plZipUnCompress1: TplZipUnCompress
-    Left = 352
-    Top = 824
-  end
-  object EpikTimer1: TEpikTimer
-    StringPrecision = 6
-    TimebaseSource = SystemTimebase
-    CorrelationMode = OnTimebaseSelect
-    Left = 768
-    Top = 560
   end
 end
