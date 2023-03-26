@@ -7,7 +7,9 @@ interface
 uses
   Classes, SysUtils, process, Forms, Controls, Graphics,
   Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
-IMPLEMENTATION
+
+type
+
   { TForm1 }
 
   TForm1 = class(TForm)
