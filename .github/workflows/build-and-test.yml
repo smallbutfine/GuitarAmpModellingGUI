@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         operating-system: [windows-2019,ubuntu-22.04,macos-latest]
-        lazarus-versions: [dist]
+        lazarus-versions: [stable]
     steps:
     - name: Checkout source code
       uses: actions/checkout@v2
