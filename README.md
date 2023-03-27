@@ -3,6 +3,7 @@ GUI for easier installation and training of neural network models for guitar amp
 
 What is this?
 GuitarML's work on Proteus, NeuralPi and Proteusboard (hardware) is amazing. https://github.com/GuitarML
+
 https://www.youtube.com/watch?v=Vs513WQFqAQ
 
 Yet, it is not easy to wrap your head around if you are not familiar with programming, AI, machine learning, neural networks.
