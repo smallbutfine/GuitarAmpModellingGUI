@@ -35,7 +35,7 @@ jobs:
  #     run: lazbuild -B "tests/testconsoleapplication.lpi"
   #  - name: Run the Unit Tests Application
   #    run: bin/testconsoleapplication "--all" "--format=plain"
-      run: TREE /f
+           TREE /f
     - name: Create semi-permanent artifacts
       uses: actions/upload-artifact@v2
       with: 
