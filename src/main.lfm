@@ -3,7 +3,7 @@ object Form1: TForm1
   Height = 874
   Top = 0
   Width = 881
-  Caption = 'Amp Model Builder GUI'
+  Caption = 'Proteus Model Builder'
   ClientHeight = 874
   ClientWidth = 881
   DesignTimePPI = 144
