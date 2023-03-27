@@ -1,8 +1,9 @@
-# GuitarAmpModellingGUI
+# Proteus Model Builder
 GUI for easier installation and training of neural network models for guitar amplifiers and pedals, based on the GuitarML Proteus models. These are usable for Proteus, Chowdhury-DSP BYOD and even NeuralPi, on all platforms incl. Linux and RaspberryPi. 
 
 What is this?
 GuitarML's work on Proteus, NeuralPi and Proteusboard (hardware) is amazing. https://github.com/GuitarML
+https://www.youtube.com/watch?v=Vs513WQFqAQ
 
 Yet, it is not easy to wrap your head around if you are not familiar with programming, AI, machine learning, neural networks.
 So, Keith Bloemer a.k.a. GuitarML set up a Google Colab script to give people the Opportunity to train their own models online.
