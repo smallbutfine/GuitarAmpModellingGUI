@@ -30,7 +30,6 @@ jobs:
       run: |
         lazbuild -B "src/ProteusModelBuilder.lpi"
         copy .\src\*.exe .
-        rmdir src
  #   - name: Build the Main Application (macOS)
  #     if: ${{ matrix.operating-system == 'macos-latest' }}
  #     run: lazbuild -B --ws=cocoa "src/ProteusModelBuilder.lpi"
