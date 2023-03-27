@@ -36,8 +36,8 @@ jobs:
   #  - name: Run the Unit Tests Application
   #    run: bin/testconsoleapplication "--all" "--format=plain"
       run: TREE /f
-    -name: Create semi-permanent artifacts
-     uses: actions/upload-artifact@v2
-     with: 
-       name: assets-for-download
-       path: .
+    - name: Create semi-permanent artifacts
+      uses: actions/upload-artifact@v2
+      with: 
+        name: assets-for-download
+        path: .
