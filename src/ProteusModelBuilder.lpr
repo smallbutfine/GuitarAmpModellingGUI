@@ -1,5 +1,7 @@
 program ProteusModelBuilder;
 
+{$R MyResource.rc}
+
 {$mode objfpc}{$H+}
 
 uses
