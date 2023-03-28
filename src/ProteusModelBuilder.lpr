@@ -1,6 +1,8 @@
 program ProteusModelBuilder;
 
+{$if defined(windows) or defined(darwin)}
 {$R Resources.rc}
+{$ifend}
 
 {$mode objfpc}{$H+}
 
