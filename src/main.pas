@@ -5,7 +5,7 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, process, Forms, Controls, Graphics,
+  Classes, SysUtils, process, Forms, Controls, Graphics, VersionSupport, 
   Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
 
 type
