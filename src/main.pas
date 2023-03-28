@@ -5,7 +5,7 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, process, Forms, Controls, Graphics,
+  Classes, SysUtils, process, Forms, Controls, Graphics, VersionSupport,
   Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
 
 type
@@ -57,6 +57,7 @@ type
     procedure Button5Click(Sender: TObject);
     procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
+    procedure ComboBox1Change(Sender: TObject);
 
     procedure FileNameEdit1Change(Sender: TObject);
     procedure FileNameEdit2Change(Sender: TObject);
@@ -176,6 +177,40 @@ begin
   FileCopy('newProteusModel.json', FileNameEdit7.FileName);
 end;
 
+procedure TForm1.ComboBox1Change(Sender: TObject);
+begin
+  if Combobox1.Text = 'Parameterized Amps' then
+     begin
+     FileNameEdit1.Visible:= False;
+     FileNameEdit2.Visible:= True;
+     FileNameEdit3.Visible:= True;
+     FileNameEdit4.Visible:= True;
+     FileNameEdit5.Visible:= True;
+     FileNameEdit6.Visible:= True;
+     Label3.Visible:= False;
+     Label2.Visible:= True;
+     Label7.Visible:= True;
+     Label4.Visible:= True;
+     Label5.Visible:= True;
+     Label6.Visible:= True;
+     end
+     else
+     begin
+     FileNameEdit1.Visible:= True;
+     FileNameEdit2.Visible:= False;
+     FileNameEdit3.Visible:= False;
+     FileNameEdit4.Visible:= False;
+     FileNameEdit5.Visible:= False;
+     FileNameEdit6.Visible:= False;
+     Label3.Visible:= True;
+     Label2.Visible:= False;
+     Label7.Visible:= False;
+     Label4.Visible:= False;
+     Label5.Visible:= False;
+     Label6.Visible:= False;
+     end;
+end;
+
 
 procedure TForm1.FileNameEdit1Change(Sender: TObject);
 begin
@@ -215,7 +250,7 @@ begin
   //PythonEngine1.VenvPythonExe:='\Automated-GuitarAmpModelling\mypyenv\Scripts\python.exe';
   //PythonEngine1.SetPythonHome('\Automated-GuitarAmpModelling\mypyenv\');
   //PythonEngine1.LoadDll;
-
+  Form1.Caption:= 'Proteus Model Builder '+ GetFileVersion();
 end;
 
 

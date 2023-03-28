@@ -12,7 +12,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the CT adLCL widgetset
-  Forms, main
+  Forms, main, VersionSupport
   { you can add units after this };
 
 {$R *.res}

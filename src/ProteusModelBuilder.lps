@@ -7,161 +7,55 @@
     <Units>
       <Unit>
         <Filename Value="ProteusModelBuilder.lpr"/>
-        <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <WindowIndex Value="0"/>
         <CursorPos Y="24"/>
-        <UsageCount Value="50"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="0"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="113"/>
-        <CursorPos X="60" Y="132"/>
-        <UsageCount Value="50"/>
+        <TopLine Value="197"/>
+        <CursorPos X="12" Y="207"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="C:\codetyphon\typhon\lcl\include\control.inc"/>
-        <FRMtype Value="0"/>
+        <Filename Value="VersionSupport.pas"/>
+        <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="3988"/>
-        <CursorPos Y="4002"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="37"/>
+        <CursorPos X="27" Y="51"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="4">
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="62" Column="27" TopLine="56"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="61" Column="21" TopLine="56"/>
+        <Caret Line="132" Column="60" TopLine="113"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="62" Column="21" TopLine="57"/>
+        <Caret Line="8" Column="73" TopLine="85"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="61" Column="21" TopLine="56"/>
+        <Caret Line="218" Column="65" TopLine="197"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="62" Column="21"/>
+        <Caret Line="224" Column="52" TopLine="203"/>
       </Position>
       <Position>
         <Filename Value="main.pas"/>
-        <Caret Line="204" Column="82" TopLine="190"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="77" Column="5" TopLine="61"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="94" Column="50" TopLine="49"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="93" Column="50" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="92" Column="50" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="91" Column="50" TopLine="58"/>
-      </Position>
-      <Position>
-        <Filename Value="ProteusModelBuilder.lpr"/>
-        <Caret Line="21"/>
-      </Position>
-      <Position>
-        <Filename Value="ProteusModelBuilder.lpr"/>
-        <Caret Line="22"/>
-      </Position>
-      <Position>
-        <Filename Value="ProteusModelBuilder.lpr"/>
-        <Caret Line="23"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="92" Column="50" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="75" Column="3" TopLine="99"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="128" Column="63" TopLine="108"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="138" Column="60" TopLine="120"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="9" Column="77"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="57" Column="3" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="ProteusModelBuilder.lpr"/>
-        <Caret Line="24"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="227" TopLine="198"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="220" Column="3" TopLine="198"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="60" Column="2" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="59" Column="28" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="218" TopLine="194"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="9" Column="77"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="57" TopLine="40"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="219" Column="5" TopLine="197"/>
-      </Position>
-      <Position>
-        <Filename Value="main.pas"/>
-        <Caret Line="221" Column="5" TopLine="197"/>
+        <Caret Line="210" Column="28" TopLine="194"/>
       </Position>
     </JumpHistory>
     <RunParams>
