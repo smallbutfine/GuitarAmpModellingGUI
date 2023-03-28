@@ -5,11 +5,12 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, process, Forms, Controls, Graphics, VersionSupport,
-  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil,
+
   {$IFDEF WINDOWS} Windows, ShellApi, {$ENDIF}
   {$IFDEF DARWIN} CocoaAll, {$ENDIF}
-  {$IFDEF LINUX} BaseUnix, {$ENDIF};
+  {$IFDEF LINUX} BaseUnix, {$ENDIF}
+  Classes, SysUtils, process, Forms, Controls, Graphics, VersionSupport,
+  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
 
 type
 
@@ -255,8 +256,6 @@ begin
   //PythonEngine1.LoadDll;
 {$IFDEF WINDOWS} Form1.Caption:= 'Proteus Model Builder '+ GetFileVersion(); {$ENDIF}
 {$IFDEF LINUX} Form1.Caption:= 'Proteus Model Builder '+ GetFileVersion(); {$ENDIF}
-end;  
-
-
-end.
+end;
+end.   
 
