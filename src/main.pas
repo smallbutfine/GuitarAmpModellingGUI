@@ -6,7 +6,10 @@ interface
 
 uses
   Classes, SysUtils, process, Forms, Controls, Graphics, VersionSupport,
-  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil;
+  Dialogs, StdCtrls, ComCtrls, EditBtn, ExtCtrls, Menus, LCLIntf, fileutil,
+  {$IFDEF WINDOWS} Windows, ShellApi, {$ENDIF}
+  {$IFDEF DARWIN} CocoaAll, {$ENDIF}
+  {$IFDEF LINUX} BaseUnix, {$ENDIF};
 
 type
 
@@ -250,8 +253,9 @@ begin
   //PythonEngine1.VenvPythonExe:='\Automated-GuitarAmpModelling\mypyenv\Scripts\python.exe';
   //PythonEngine1.SetPythonHome('\Automated-GuitarAmpModelling\mypyenv\');
   //PythonEngine1.LoadDll;
-  Form1.Caption:= 'Proteus Model Builder '+ GetFileVersion();
-end;
+{$IFDEF WINDOWS} Form1.Caption:= 'Proteus Model Builder '+ GetFileVersion(); {$ENDIF}
+{$IFDEF LINUX} Form1.Caption:= 'Proteus Model Builder '+ GetFileVersion(); {$ENDIF}
+end;  
 
 
 end.
