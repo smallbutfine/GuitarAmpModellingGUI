@@ -1,15 +1,17 @@
 object Form1: TForm1
-  Left = 0
+  Left = 235
   Height = 874
-  Top = 0
+  Top = 3
   Width = 881
   Caption = 'Proteus Model Builder'
-  ClientHeight = 874
+  ClientHeight = 844
   ClientWidth = 881
+  Color = clSilver
   DesignTimePPI = 144
+  Font.Style = [fsBold]
   Menu = MainMenu1
   OnCreate = FormCreate
-  LCLVersion = '8.0'
+  LCLVersion = '2.2.6.0'
   object Button1: TButton
     Left = 8
     Height = 37
@@ -25,43 +27,49 @@ object Form1: TForm1
     Left = 664
     Height = 25
     Top = 8
-    Width = 95
+    Width = 102
     Caption = 'Model type:'
+    ParentColor = False
   end
   object Label3: TLabel
     Left = 8
     Height = 25
     Top = 124
-    Width = 339
+    Width = 362
     Caption = 'Select snapshot model response audio file:'
+    ParentColor = False
   end
   object Label4: TLabel
     Left = 8
     Height = 25
     Top = 197
-    Width = 553
+    Width = 598
     Caption = 'Select parameter response file at 0%: (Only for parameterized models)'
+    ParentColor = False
   end
   object Label5: TLabel
     Left = 8
     Height = 25
     Top = 268
-    Width = 563
+    Width = 608
     Caption = 'Select parameter response file at 25%: (Only for parameterized models)'
+    ParentColor = False
   end
   object Label6: TLabel
     Left = 8
     Height = 25
     Top = 343
-    Width = 563
+    Width = 608
     Caption = 'Select parameter response file at 50%: (Only for parameterized models)'
+    ParentColor = False
   end
   object Label7: TLabel
     Left = 8
     Height = 25
     Top = 417
-    Width = 563
+    Width = 608
     Caption = 'Select parameter response file at 75%: (Only for parameterized models)'
+    ParentColor = False
   end
   object ComboBox1: TComboBox
     Left = 552
@@ -75,13 +83,14 @@ object Form1: TForm1
       'Pedals'
       'Parameterized Amps'
     )
+    OnChange = ComboBox1Change
     TabOrder = 1
     Text = 'Select a model type here.'
   end
   object StatusBar1: TStatusBar
     Left = 0
     Height = 36
-    Top = 838
+    Top = 808
     Width = 881
     Panels = <    
       item
@@ -93,7 +102,7 @@ object Form1: TForm1
   object FileNameEdit1: TFileNameEdit
     Left = 8
     Height = 33
-    Top = 153
+    Top = 152
     Width = 856
     FileName = 'Select snapshot response file ...'
     FilterIndex = 0
@@ -169,7 +178,7 @@ object Form1: TForm1
     Left = 8
     Height = 66
     Top = 14
-    Width = 208
+    Width = 232
     Caption = 'Re-/Install Build System'
     OnClick = Button2Click
     TabOrder = 8
@@ -177,8 +186,8 @@ object Form1: TForm1
   object Button3: TButton
     Left = 8
     Height = 46
-    Top = 712
-    Width = 328
+    Top = 696
+    Width = 352
     Caption = 'Re-/Install Proteus VST from GuitarML'
     OnClick = Button3Click
     TabOrder = 9
@@ -186,8 +195,8 @@ object Form1: TForm1
   object Button4: TButton
     Left = 8
     Height = 49
-    Top = 768
-    Width = 328
+    Top = 752
+    Width = 352
     Caption = 'Re-/Install Proteus Community Library'
     OnClick = Button4Click
     TabOrder = 10
@@ -196,14 +205,15 @@ object Form1: TForm1
     Left = 16
     Height = 25
     Top = 80
-    Width = 183
+    Width = 201
     Caption = 'Installation mandatory!'
+    ParentColor = False
   end
   object Button6: TButton
-    Left = 536
+    Left = 504
     Height = 55
     Top = 736
-    Width = 328
+    Width = 360
     Caption = 'Re-/Install BYOD from Chowdhury-DSP'
     OnClick = Button6Click
     TabOrder = 11
@@ -212,8 +222,9 @@ object Form1: TForm1
     Left = 8
     Height = 25
     Top = 491
-    Width = 573
+    Width = 618
     Caption = 'Select parameter response file at 100%: (Only for parameterized models)'
+    ParentColor = False
   end
   object FileNameEdit6: TFileNameEdit
     Left = 8
@@ -252,15 +263,17 @@ object Form1: TForm1
     Left = 232
     Height = 25
     Top = 80
-    Width = 331
+    Width = 356
     Caption = 'Contains input audio file and Colab script.'
+    ParentColor = False
   end
   object Label8: TLabel
     Left = 12
     Height = 25
     Top = 576
-    Width = 305
+    Width = 329
     Caption = 'Install built model here / Model Name:'
+    ParentColor = False
   end
   object FileNameEdit7: TFileNameEdit
     Left = 12

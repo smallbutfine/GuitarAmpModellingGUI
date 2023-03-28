@@ -1,5 +1,5 @@
 {"version":1,"strings":[
-{"hash":91325427,"name":"tform1.caption","sourcebytes":[65,109,112,32,77,111,100,101,108,32,66,117,105,108,100,101,114,32,71,85,73,32,102,111,114,32,71,117,105,116,97,114,77,76,32,80,114,111,116,101,117,115],"value":"Amp Model Builder GUI for GuitarML Proteus"},
+{"hash":256509538,"name":"tform1.caption","sourcebytes":[80,114,111,116,101,117,115,32,77,111,100,101,108,32,66,117,105,108,100,101,114],"value":"Proteus Model Builder"},
 {"hash":240629797,"name":"tform1.button1.caption","sourcebytes":[66,117,105,108,100,32,109,111,100,101,108,32,111,102,102,108,105,110,101],"value":"Build model offline"},
 {"hash":238050362,"name":"tform1.label1.caption","sourcebytes":[77,111,100,101,108,32,116,121,112,101,58],"value":"Model type:"},
 {"hash":85630122,"name":"tform1.label3.caption","sourcebytes":[83,101,108,101,99,116,32,115,110,97,112,115,104,111,116,32,109,111,100,101,108,32,114,101,115,112,111,110,115,101,32,97,117,100,105,111,32,102,105,108,101,58],"value":"Select snapshot model response audio file:"},

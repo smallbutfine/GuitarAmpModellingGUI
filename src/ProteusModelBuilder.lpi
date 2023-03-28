@@ -11,19 +11,18 @@
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
+        <LongPathAware Value="True"/>
       </XPManifest>
       <Icon Value="0"/>
     </General>
     <i18n>
       <EnableI18N Value="True"/>
-      <OutDir Value="i8n"/>
     </i18n>
     <VersionInfo>
-      <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MinorVersionNr Value="9"/>
       <RevisionNr Value="5"/>
-      <BuildNr Value="1"/>
+      <BuildNr Value="2"/>
       <Attributes pvaPreRelease="True"/>
       <StringTable InternalName="Proteus Builder" LegalCopyright="2023 Martin Haverland" ProductVersion="0.9.5"/>
     </VersionInfo>
@@ -48,16 +47,18 @@
     <Units>
       <Unit>
         <Filename Value="ProteusModelBuilder.lpr"/>
-        <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="main.pas"/>
-        <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="VersionSupport.pas"/>
+        <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -72,6 +73,9 @@
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2Set"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>
@@ -79,17 +83,4 @@
       </Options>
     </Linking>
   </CompilerOptions>
-  <Debugging>
-    <Exceptions>
-      <Item>
-        <Name Value="EAbort"/>
-      </Item>
-      <Item>
-        <Name Value="ECodetoolError"/>
-      </Item>
-      <Item>
-        <Name Value="EFOpenError"/>
-      </Item>
-    </Exceptions>
-  </Debugging>
 </CONFIG>
