@@ -1,6 +1,6 @@
 program ProteusModelBuilder;
 
-{$R MyResource.rc}
+{$R Resources.rc}
 
 {$mode objfpc}{$H+}
 
